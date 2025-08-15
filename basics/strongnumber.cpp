@@ -16,7 +16,6 @@ int detectStrong(int num){
     int digit, sum = 0;
     int temp = num;
     
-    // calculate 1! + 4! + 5!
     while(temp!=0){
         digit = temp % 10;
         
@@ -96,4 +95,5 @@ int main ()
     else
         cout << num << " is Not Strong Number";
 
+    return 0;
 }
