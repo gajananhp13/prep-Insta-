@@ -1,37 +1,39 @@
-// program for zero to one 
-// logic we make the number reverse by making zero rem to one then add it to get reversed version and we reverse that number to get the original number
+// // program for zero to one 
+//  logic we make the number reverse by 
+//making zero rem to one then add it to get reversed version and we reverse that number to get the original number
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int zto(int n)
-{
-    if(n==0) return 1;
-    int num=0,num2=0;
-    while(n>0)
-    {
-        int rem=n%10;
-        if(rem==0)
-        rem=1;
+// int zto(int n)
+// {
+//     if(n==0) return 1;
+//     int num=0,num2=0;
+//     while(n>0)
+//     {
+//         int rem=n%10;
+//         if(rem==0)
+//         rem=1;
         
-        n/=10;
-        num2=num2*10+rem;
+//         n/=10;
+//         num2=num2*10+rem;
         
-    }
-    // int num=0 becuase we need to store the reverse of the number with it 
-    while(num2>0)
-    {
-        int rem=num2%10;
-        num=num*10+rem;
-        num2/=10;
-    }
+//     }
+//     // int num=0 becuase we need to store the reverse of the number with it 
+//     while(num2>0)
+//     {
+//         int rem=num2%10;
+//         num=num*10+rem;
+//         num2/=10;
+//     }
     
-    return num;
-}
+//     return num;
+// }
 
-int main() {
-int n;
-cin>>n;
-cout<<zto(n);
+// int main() {
+// int n;
+// cin>>n;
+// cout<<zto(n);
 
-}
+// }
+
