@@ -1,18 +1,26 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-bool prime(int n,int i=2)
+bool isPrime(int n, int i = 2)
 {
-    if (n==2) return true;
-     else return false; 
-if ()
+    // Base conditions
+    if (n <= 2) return (n == 2) ? true : false; 
+    if (n % i == 0) return false; 
+    if (i * i > n)
+       return true;
 
-    return prime(n,i+2)
+    return isPrime(n, i + 1);
 }
 
+// Driver Program
 int main()
 {
     int n;
     cin>>n;
-    
+    if (isPrime(n))
+       cout << "Prime Number";
+    else
+       cout << "Not a Prime";
+
+    return 0;
 }
